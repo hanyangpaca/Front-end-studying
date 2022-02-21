@@ -4,11 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>레드향 샐러드 레시피</title>
+     <!--id선택자-->
+    <style>
+        #container {
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+     <!--클래스선택자-->
+    <style>
+        p {
+            font-style: italic;
+        }
+        .accent {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px auto;
+            width: 500px;
+        }
+        .bg {
+            background-color: #ddd;
+        }
+    </style>
 </head>
     <body>
         <div id="container">
             <img src="img/redsmell.jpg" alt="레드향" height="500px">
-            <h1>레드향 구매 사이트</h1>
+            <h1 class="accent">레드향 구매 사이트</h1>
             <form action="">
               <fieldset>
                   <label>아이디:<input type="text" id="user id" size="10"></label>
@@ -16,4 +40,9 @@
                   <a href="JEJU.html" onclick="submit()">로그인</a>
               </fieldset>     
           </form>
+        <div class="accent">
+          <h1 class="bg">레드향</h1>
+          <p>껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불리운다.</p>
+          <p>비타민 C와 비타민 P가 풍부해서 꿀맛탱이다.</p>
+        </div>
             <hr>
